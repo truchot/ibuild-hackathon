@@ -1,18 +1,19 @@
 import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
+import { ConnectWallet } from "@/components/connect-wallet";
 
 export default function LoginPage() {
+
+
     return (
         <div className="w-full lg:grid min-h-screen lg:grid-cols-2">
             <div className="flex items-center justify-center py-12">
                 <div className="mx-auto grid w-[350px] gap-6">
-                    <Button type="submit" className="w-full">
-                        Login with Wallet
-                    </Button>
-                    <Button variant="outline" className="w-full">
-                        Login with Google
-                    </Button>
+                    <ConnectWallet />
+                    {/*<Button variant="outline" className="w-full">*/}
+                    {/*    Login with Google*/}
+                    {/*</Button>*/}
                 </div>
             </div>
             <figure className="hidden bg-muted lg:block">
