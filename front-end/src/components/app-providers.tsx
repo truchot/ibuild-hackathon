@@ -13,7 +13,7 @@ export function AppProviders({ children }: PropsWithChildren) {
         <WagmiProvider config={wagmiConfig}>
             <QueryClientProvider client={queryClient}>
                 {children}
-            </QueryClientProvider>.
+            </QueryClientProvider>
         </WagmiProvider>
     );
 }
